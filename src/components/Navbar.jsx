@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react"
+
 import { MdOutlineCloseFullscreen } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
+import Image from "./Image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +13,12 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
       <div className="flex items-center gap-2 text-2xl font-bold">
-        <img src='/logo.png' alt='logo' className='w-10 h-10' />
+        <Image
+          src='/logo.png' 
+          alt='logo'
+          w={48}
+          h={48}
+        />
         <span className="text-primary-100">Blogger Inc.</span>
       </div>
 
